@@ -90,7 +90,11 @@
       </div>
     </div>
     <script>
-      document.querySelectorAll(".hot").innerHTML += (" 🔥");
+      let prices = document.querySelectorAll(".price");
+      prices.forEach(price => {
+        price.classList.add("hot")
+        price.innerHTML += ("🔥");
+      });
     </script>
   </body>
 </html>
